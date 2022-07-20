@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  font-size: 16px;
+  --color-white: #fff;
+  --color-orange: #fc7614;
+  --color-button: #7c8798;
+  --color-paragraph: #969fad;
+}
+/* Heading (Large) */
+.heading-l {
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 35px;
+}
+
+/* Rating */
+.rating {
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px; /* identical to box height, or 150% */
+}
+
+/* Heading (Medium) */
+.heading-m {
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: 2px;
+}
+
+/* Body */
+.body {
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px; /* identical to box height, or 160% */
+}
+
+body {
+  background-color: blue;
+}
+main {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+.box-container {
+  max-width: 412px;
+  max-height: 416px;
+  background-color: aquamarine;
+}
+.container-wrapper {
+  margin: 1.5em;
+}
+
+.star {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: var(--color-paragraph);
+  margin-top: 1.5em;
+}
+.heading-l {
+  margin-block: 0.6em;
+}
+.body {
+  margin-bottom: 1.5em;
+}
