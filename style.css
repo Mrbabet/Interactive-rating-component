@@ -15,7 +15,7 @@
 }
 /* Heading (Large) */
 .heading-l {
-  font-family: "Overpass";
+  font-family: "Overpass, sans-serif";
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -25,7 +25,7 @@
 
 /* Rating */
 .rating {
-  font-family: "Overpass";
+  font-family: "Overpass, sans-serif ";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -35,7 +35,7 @@
 
 /* Heading (Medium) */
 .heading-m {
-  font-family: "Overpass";
+  font-family: "Overpass, sans-serif";
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
@@ -45,49 +45,46 @@
 
 /* Body */
 .body {
-  font-family: "Overpass";
+  font-family: "Overpass, sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px; /* identical to box height, or 160% */
-  color: var(--color-paragraph);
+  color: #7c8798;
   display: flex;
 }
 
 body {
   background-color: hsl(216, 12%, 8%);
 }
-main {
+.container {
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-
   height: 100vh;
 }
-.box-container {
-  max-width: 412px;
-  max-height: 416px;
-  background-color: hsl(213, 19%, 18%);
+
+.card-container {
+  background: radial-gradient(at top, #232a34 20%, #181e27);
   border-radius: 10px;
-}
-.container-wrapper {
-  margin: 1.5em;
+  margin: 2em auto;
+  padding: 1.5em;
+  width: 90%;
+  display: block;
 }
 
-.circle {
-  height: 40px;
-  width: 40px;
+header.circle {
+  height: 42px;
+  width: 42px;
   border-radius: 50%;
-  background-color: var(--color-paragraph);
-  border: none;
+  background-color: #262e38;
 }
 .star {
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-color: var(--color-paragraph);
-  margin-top: 1.5em;
+  background-color: #262e38;
   border: none;
   display: flex;
   align-items: center;
@@ -104,31 +101,104 @@ svg {
 }
 .btn-group {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 1em;
+  width: 100%;
 }
-.button {
-  margin: 0;
-  padding: 0;
+.circle {
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  background-color: #262e38;
   cursor: pointer;
-}
-.button span {
-  color: var(--color-white);
-}
-.btn-group .circle {
-  margin: 1em;
-}
-.submit-group {
   display: flex;
   justify-content: center;
+  align-items: center;
+  color: white;
+}
+.circle:hover {
+  background-color: #969fad;
+}
+.circle:active {
+  background-color: #fc7614;
+}
+/*added class with JS to the selected rating*/
+.selected {
+  background-color: var(--lightGrey);
+  color: var(--white);
+}
+
+.submit-group {
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
 }
 .submit-button {
   background-color: #fc7614;
   border: none;
   padding-block: 1em;
-  padding-inline: 8em;
+  width: 100%;
   border-radius: 99vh;
   margin-bottom: 1em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: white;
+  cursor: pointer;
+}
+.submit-button:active {
+  background-color: aqua;
+}
+.submit-button:hover {
+  background-color: white;
+  color: #fc7614;
+}
+input {
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  background-color: #262e38;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input[type="radio"] {
+  display: none;
+}
+.card-container-rating {
+  background: radial-gradient(at top, #232a34 20%, #181e27);
+  border-radius: 10px;
+  margin: 2em auto;
+  padding: 1.5em;
+  width: 90%;
+  display: none;
+}
+.thankyou {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rating {
+  color: #fc7614;
+  font-weight: bold;
+}
+.heading {
+  color: white;
+  font-weight: bold;
+  margin-block: 0.6em;
+}
+.paragraph {
+  color: var(--color-paragraph);
+  text-align: center;
+}
+
+@media screen and (min-width: 375px) {
+  .card-container {
+    background: radial-gradient(at top, #232a34 20%, #181e27);
+    border-radius: 10px;
+    margin: 2em auto;
+    padding: 1.5em;
+    max-width: 412px;
+  }
 }
