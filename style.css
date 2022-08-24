@@ -107,8 +107,8 @@ svg {
   width: 100%;
 }
 .circle {
-  height: 42px;
-  width: 42px;
+  height: 51px;
+  width: 51px;
   border-radius: 50%;
   background-color: #262e38;
   cursor: pointer;
